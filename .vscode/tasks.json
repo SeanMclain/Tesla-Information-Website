@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Preview Tesla Atlas",
+      "type": "process",
+      "command": "python3",
+      "args": ["-m", "http.server", "5500", "--bind", "127.0.0.1"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    }
+  ]
+}
