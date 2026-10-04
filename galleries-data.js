@@ -1018,6 +1018,66 @@ const GALLERIES={
       "credit": "CC0 · Mpelas199"
     }
   ],
+  "cybertruck-2023": [
+    {
+      "src": "assets/gallery/cybertruck-2023-1.webp",
+      "thumb": "assets/gallery/cybertruck-2023-1-thumb.webp",
+      "kind": "exterior",
+      "title": "Production-level Cybertruck on display in a Denver Tesla showroom, 29 November 2023.",
+      "era": "2023 · CC0 · N2e",
+      "source": "https://commons.wikimedia.org/wiki/File:2023_production-level_Tesla_Cybertruck_on_display_in_Denver,_Colorado.jpg",
+      "credit": "CC0 · N2e"
+    },
+    {
+      "src": "assets/gallery/cybertruck-2023-2.webp",
+      "thumb": "assets/gallery/cybertruck-2023-2-thumb.webp",
+      "kind": "exterior",
+      "title": "Production Cybertruck in the Tesla Design District showroom, Miami, 5 December 2023.",
+      "era": "2023 · CC BY 2.0 · Phillip Pessar",
+      "source": "https://commons.wikimedia.org/wiki/File:Tesla_Showroom_Miami_Design_District_December_2023_-_Tesla_Cybertruck_-_1.jpg",
+      "credit": "CC BY 2.0 · Phillip Pessar"
+    }
+  ],
+  "cybertruck-2025": [
+    {
+      "src": "assets/gallery/cybertruck-2025-1.webp",
+      "thumb": "assets/gallery/cybertruck-2025-1-thumb.webp",
+      "kind": "exterior",
+      "title": "Production Cybertruck at an outdoor display in Chile, 12 April 2025.",
+      "era": "2025 · CC BY-SA 2.0 · RL GNZLZ",
+      "source": "https://commons.wikimedia.org/wiki/File:Tesla_Cybertruck_2025_(54508846933).jpg",
+      "credit": "CC BY-SA 2.0 · RL GNZLZ"
+    }
+  ],
+  "cybertruck-2026": [
+    {
+      "src": "assets/gallery/cybertruck-2026-1.webp",
+      "thumb": "assets/gallery/cybertruck-2026-1-thumb.webp",
+      "kind": "exterior",
+      "title": "2026 Cybertruck at the Montréal International Auto Show, 16 January 2026.",
+      "era": "2026 · Public domain · Bull-Doser",
+      "source": "https://commons.wikimedia.org/wiki/File:2026_Tesla_Cybertruck_au_SIAM_2026.JPG",
+      "credit": "Public domain · Bull-Doser"
+    },
+    {
+      "src": "assets/gallery/cybertruck-2026-2.webp",
+      "thumb": "assets/gallery/cybertruck-2026-2-thumb.webp",
+      "kind": "exterior",
+      "title": "Foundation Series Cybertruck at the Manila International Auto Show, 11 April 2026.",
+      "era": "2026 · CC BY-SA 4.0 · Ethan Llamas",
+      "source": "https://commons.wikimedia.org/wiki/File:Tesla_Cybertruck_Foundation_Series_MIAS_2026_01.jpg",
+      "credit": "CC BY-SA 4.0 · Ethan Llamas"
+    },
+    {
+      "src": "assets/gallery/cybertruck-2026-3.webp",
+      "thumb": "assets/gallery/cybertruck-2026-3-thumb.webp",
+      "kind": "exterior",
+      "title": "Foundation Series Cybertruck, rear view, at the Manila International Auto Show, 11 April 2026.",
+      "era": "2026 · CC BY-SA 4.0 · Ethan Llamas",
+      "source": "https://commons.wikimedia.org/wiki/File:Tesla_Cybertruck_Foundation_Series_MIAS_2026_02.jpg",
+      "credit": "CC BY-SA 4.0 · Ethan Llamas"
+    }
+  ],
   "cybercab": [
     {
       "src": "assets/gallery/cybercab-0.webp",
