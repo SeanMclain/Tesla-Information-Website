@@ -43,7 +43,8 @@ const RESEARCH={
       ],
       "source": "https://www.tesla.com/fremont-factory",
       "image": "assets/research/fremont.webp",
-      "photoSource": "https://www.tesla.com/fremont-factory"
+      "photoSource": "https://commons.wikimedia.org/wiki/File:TESLA_logo,_freshly_unveiled_at_Fremont_Factory_(5123666466).jpg",
+      "photoCaption": "Tesla logo at the Fremont Factory, 27 October 2010. CC BY 2.0 · Steve Jurvetson"
     },
     {
       "id": "nevada",
@@ -52,7 +53,8 @@ const RESEARCH={
       "summary": "A desert manufacturing campus for motors, powertrains, batteries and energy storage. Tesla describes an expansion for LFP cells and a high-volume Semi factory. Rooftop solar is a defining feature.",
       "source": "https://www.tesla.com/giga-nevada",
       "image": "assets/research/nevada.webp",
-      "photoSource": "https://www.tesla.com/giga-nevada"
+      "photoSource": "https://commons.wikimedia.org/wiki/File:Tesla_Gigafactory_1_-_December_2019.jpg",
+      "photoCaption": "Aerial of Gigafactory Nevada, 27 December 2019. CC BY-SA 4.0 · Smnt"
     },
     {
       "id": "texas",
@@ -61,7 +63,8 @@ const RESEARCH={
       "summary": "Tesla’s global corporate headquarters and a manufacturing site for Model Y and Cybertruck. The purpose-built Colorado River campus covers 2,500 acres, with over 10 million square feet of factory floor.",
       "source": "https://www.tesla.com/en_gb/giga-texas",
       "image": "assets/research/texas.webp",
-      "photoSource": "https://www.tesla.com/en_gb/giga-texas"
+      "photoSource": "https://commons.wikimedia.org/wiki/File:Gigafactory_Texas_Building_1_June_2022.jpg",
+      "photoCaption": "North facade of Gigafactory Texas, 17 June 2022. CC BY 4.0 · Larry D. Moore"
     },
     {
       "id": "shanghai",
@@ -70,7 +73,8 @@ const RESEARCH={
       "summary": "Tesla’s first overseas Gigafactory builds Model 3 and Model Y. Groundbreaking began in January 2019; the factory was production-ready within ten months. Its long industrial halls form a compact manufacturing campus.",
       "source": "https://www.tesla.com/hu_hu/manufacturing",
       "image": "assets/research/shanghai.webp",
-      "photoSource": "https://www.tesla.com/hu_hu/manufacturing"
+      "photoSource": "https://commons.wikimedia.org/wiki/File:Tesla_Gigafactory_Shanghai_aerial_view_03.png",
+      "photoCaption": "Aerial of Gigafactory Shanghai, 23 May 2024. CC BY 3.0 · China News Service"
     },
     {
       "id": "berlin",
@@ -79,7 +83,8 @@ const RESEARCH={
       "summary": "Tesla’s first European vehicle factory produces Model Y. Purpose-built industrial halls sit in a wooded landscape southeast of Berlin. The official factory page also describes battery-cell production.",
       "source": "https://www.tesla.com/giga-berlin",
       "image": "assets/research/berlin.webp",
-      "photoSource": "https://www.tesla.com/giga-berlin"
+      "photoSource": "https://commons.wikimedia.org/wiki/File:Tesla_Gigafactory_4_DJI_20230728123435.JPG",
+      "photoCaption": "Aerial of Gigafactory Berlin-Brandenburg in Grünheide, 28 July 2023. CC BY-SA 3.0 · Michael Wolf"
     },
     {
       "id": "new-york",
@@ -88,7 +93,8 @@ const RESEARCH={
       "summary": "The Riverbend industrial redevelopment makes Solar Roof and Supercharger components. Tesla’s filings date the substantially completed facility to April 2018.",
       "source": "https://www.tesla.com/hu_hu/manufacturing",
       "image": "assets/research/new-york.webp",
-      "photoSource": "https://www.tesla.com/hu_hu/manufacturing"
+      "photoSource": "https://commons.wikimedia.org/wiki/File:Tesla_sign_2.jpg",
+      "photoCaption": "Tesla sign and Gigafactory New York at the RiverBend plant in Buffalo, 10 April 2018. CC BY-SA 4.0 · Buffaboy"
     },
     {
       "id": "engineering",
@@ -97,7 +103,8 @@ const RESEARCH={
       "summary": "Tesla’s engineering and AI headquarters reuses the former Hewlett-Packard campus at 1501 Page Mill Road in Stanford Research Park. Its significance is the reuse of a historic Silicon Valley engineering site.",
       "source": "https://www.gov.ca.gov/2023/02/22/governor-newsom-welcomes-new-tesla-global-engineering-and-ai-hq-in-california/",
       "image": "assets/research/engineering.webp",
-      "photoSource": "https://www.gov.ca.gov/2023/02/22/governor-newsom-welcomes-new-tesla-global-engineering-and-ai-hq-in-california/"
+      "photoSource": "https://commons.wikimedia.org/wiki/File:HP_HQ_campus_2.JPG",
+      "photoCaption": "Former Hewlett-Packard headquarters at 1501 Page Mill Road, Palo Alto, photographed 8 March 2009. Tesla later opened its engineering and AI headquarters on this campus. CC BY 3.0 · BrokenSphere"
     }
   ],
   "designs": [
@@ -123,6 +130,8 @@ const RESEARCH={
       "summary": "A low sedan built around an underfloor battery and a large portrait touchscreen; the 2021 interior changed to a horizontal display.",
       "source": "https://ir.tesla.com/press-release/tesla-motors-launches-revolutionary-supercharger-enabling",
       "image": "assets/model-s.webp",
+      "photoSource": "https://commons.wikimedia.org/wiki/File:2021_Tesla_Model_S_P2_Long_Range_front_right_view.jpg",
+      "photoCaption": "2021 Model S Long Range, refreshed front. CC BY-SA 4.0 · Dllu",
       "model": "ms"
     },
     {
@@ -132,6 +141,8 @@ const RESEARCH={
       "summary": "Falcon Wing rear doors and a panoramic windshield distinguish Tesla’s larger SUV.",
       "source": "https://ir.tesla.com/press-release/model-x-fastest-selling-tesla-ever",
       "image": "assets/model-x.webp",
+      "photoSource": "https://commons.wikimedia.org/wiki/File:23_Tesla_Model_X_Plaid.jpg",
+      "photoCaption": "2023 Model X Plaid. CC0 · HJUdall",
       "model": "mx"
     },
     {
@@ -141,6 +152,8 @@ const RESEARCH={
       "summary": "A compact sedan with a minimal dashboard organized around a central touchscreen. The 2024 refresh changed the lighting and interior details.",
       "source": "https://www.tesla.com/model3",
       "image": "assets/model-3-refresh.webp",
+      "photoSource": "https://commons.wikimedia.org/wiki/File:2023_Tesla_Model_3_Highland_Long_Range_AWD.jpg",
+      "photoCaption": "2024 Highland Model 3 Long Range. CC BY-SA 4.0 · Chanokchon",
       "model": "m3"
     },
     {
@@ -150,6 +163,8 @@ const RESEARCH={
       "summary": "An SUV developed from the Model 3 platform. The refreshed design adopts a more distinctive front and rear lighting treatment.",
       "source": "https://www.tesla.com/modely",
       "image": "assets/model-y-refresh.webp",
+      "photoSource": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_2025_at_Santana_Row_dllu_01.jpg",
+      "photoCaption": "2025 refreshed Model Y. CC BY-SA 4.0 · Dllu",
       "model": "my"
     },
     {
@@ -159,6 +174,8 @@ const RESEARCH={
       "summary": "Flat stainless-steel surfaces, a faceted silhouette and a full-width light bar define the pickup. Concept and production photos are separate in the archive.",
       "source": "https://www.tesla.com/cybertruck",
       "image": "assets/cybertruck-production.webp",
+      "photoSource": "https://commons.wikimedia.org/wiki/File:Foundation_series_Cybertruck_at_dusk_in_San_Jose_dllu.jpg",
+      "photoCaption": "Foundation Series production Cybertruck. CC BY-SA 4.0 · Dllu",
       "model": "ct"
     },
     {
