@@ -1,0 +1,310 @@
+/* Tesla Atlas visual layer. Loaded after style.css.
+   Does not change data, galleries, or comparison behavior. */
+
+:root {
+  --bg: #07080a;
+  --panel: #12161b;
+  --line: #2a3138;
+  --muted: #a7b0b8;
+  --red: #e82127;
+  --white: #f4f1ea;
+  --ink: #101114;
+  --shadow: 0 24px 60px rgba(0, 0, 0, .35);
+}
+
+html { scroll-padding-top: 92px; }
+
+body.atlas {
+  background:
+    radial-gradient(900px 420px at 12% -10%, rgba(232, 33, 39, .16), transparent 60%),
+    radial-gradient(700px 380px at 100% 0%, rgba(255, 255, 255, .04), transparent 55%),
+    var(--bg);
+  color: var(--white);
+  font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
+  font-size: 16.5px;
+  letter-spacing: -0.011em;
+}
+
+body.atlas h1,
+body.atlas .feature h2,
+body.atlas .gallery-heading h2 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+body.atlas h2,
+body.atlas h3,
+body.atlas .brand,
+body.atlas button,
+body.atlas select,
+body.atlas nav {
+  font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 72px;
+  padding: 0 4vw;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(7, 8, 10, .78);
+  backdrop-filter: blur(18px) saturate(1.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .03);
+}
+
+.brand {
+  letter-spacing: .18em;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.brand b {
+  color: var(--white);
+  font-weight: 500;
+  opacity: .72;
+}
+
+.mark {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  display: inline-grid;
+  place-items: center;
+  color: var(--red);
+  font-style: normal;
+  font-size: 0;
+  border: 1px solid rgba(232, 33, 39, .45);
+  border-radius: 8px;
+  background: rgba(232, 33, 39, .08);
+}
+
+.mark svg { display: block; }
+
+nav { gap: 8px; }
+
+nav a {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border-bottom: 0;
+  color: var(--muted);
+  font-size: 13.5px;
+  letter-spacing: .01em;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--white);
+  background: rgba(255, 255, 255, .06);
+  border-bottom-color: transparent;
+}
+
+.edition {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 12px;
+  letter-spacing: .14em;
+  background: rgba(255, 255, 255, .03);
+}
+
+.intro {
+  padding: 56px 0 28px;
+  align-items: flex-end;
+}
+
+.eyebrow {
+  letter-spacing: .22em;
+  font-size: 11px;
+}
+
+h1 {
+  font-size: clamp(46px, 6vw, 84px);
+  line-height: .92;
+  max-width: 11ch;
+  margin-bottom: 16px;
+}
+
+.lead {
+  max-width: 46ch;
+  font-size: 18px;
+  line-height: 1.45;
+  color: #c5ccd2;
+}
+
+.snapshot {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 18px;
+  background: rgba(18, 22, 27, .8);
+  min-width: 180px;
+}
+
+.snapshot strong {
+  display: block;
+  margin-top: 4px;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.modeltabs {
+  gap: 8px;
+  border-bottom: 0;
+  padding: 6px 0 18px;
+}
+
+.modeltabs button {
+  border: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, .02);
+  font-size: 14.5px;
+  letter-spacing: 0;
+}
+
+.modeltabs button.active {
+  background: var(--white);
+  color: var(--ink);
+  border-color: var(--white);
+}
+
+.modeltabs button:hover { color: var(--white); border-color: #4a545e; }
+.modeltabs button.active:hover { color: var(--ink); }
+
+.years {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+  padding: 4px 0 22px;
+}
+
+.years button {
+  flex: 0 0 auto;
+  min-width: 76px;
+  border-radius: 999px;
+  padding: 9px 12px;
+  background: transparent;
+}
+
+.years button.active {
+  background: var(--red);
+  border-color: var(--red);
+  color: white;
+}
+
+.feature,
+.gallery-stage,
+.research-card,
+.guidegrid article,
+.comparepic,
+.stats > div,
+.method p,
+.comparecontrols > div {
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.feature { height: min(58vw, 560px); border-color: rgba(255, 255, 255, .08); }
+.feature:after {
+  background:
+    linear-gradient(90deg, rgba(7, 8, 10, .82), transparent 62%),
+    linear-gradient(0deg, rgba(7, 8, 10, .72), transparent 48%);
+}
+.featuretext { left: 36px; bottom: 36px; }
+.tag {
+  border-radius: 999px;
+  letter-spacing: .16em;
+  background: rgba(7, 8, 10, .45);
+  backdrop-filter: blur(8px);
+}
+
+.stats { gap: 14px; }
+.stats > div { padding: 22px 22px 20px !important; }
+.statlabel { letter-spacing: .16em; }
+.statnum {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.infogrid h3,
+.guidegrid h3,
+.research-body h3,
+.comparepic h3 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.pill {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .03);
+}
+
+section:not(:first-child) {
+  margin-top: 84px;
+  padding-top: 42px;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.sectionhead { margin-bottom: 28px; }
+
+.guidegrid article,
+.method p,
+.research-body { padding: 26px; }
+
+.tablewrap { border-radius: 16px; }
+th { letter-spacing: .12em; }
+
+.comparecontrols { gap: 16px; }
+.vs {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  letter-spacing: .08em;
+}
+
+.gallery-stage { background: #0c0f12; }
+.main-gallery .gallery-track { height: min(56vw, 560px); }
+.gallery-arrow {
+  border-radius: 999px;
+  width: 44px;
+  height: 44px;
+  font-size: 28px;
+}
+.gallery-filters button,
+.gallery-collection button { border-radius: 999px; }
+.gallery-filters button.chosen,
+.gallery-collection button.chosen {
+  background: var(--white);
+  color: var(--ink);
+  border-color: var(--white);
+}
+.gallery-thumbnails button.chosen { border-color: var(--red); }
+
+footer {
+  margin-top: 72px;
+  padding: 28px 4vw 36px;
+  background: #050607;
+}
+
+footer .brand { letter-spacing: .16em; }
+
+details { border-radius: 16px; background: rgba(255, 255, 255, .02); }
+
+@media (max-width: 800px) {
+  h1 { font-size: 46px; max-width: none; }
+  .intro { padding-top: 32px; }
+  .feature { height: 420px; }
+  .snapshot { display: none; }
+  header { height: auto; }
+}
+
+@media (max-width: 600px) {
+  nav a { padding: 8px 10px; }
+  .edition { letter-spacing: .08em; }
+}

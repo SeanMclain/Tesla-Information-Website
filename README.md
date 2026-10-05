@@ -17,7 +17,8 @@ Save your changes and refresh the browser to see them. Stop the preview with Ctr
 ## Where to make changes
 
 - `index.html`: page structure, headings, navigation, and static text.
-- `style.css`: colors, layout, spacing, and responsive styling.
+- `style.css`: original layout and component rules.
+- `atlas.css`: current type, color, pills, and hero treatment. Edit this before restyling `style.css`.
 - `app.js`: vehicle selection and comparison behavior.
 - `data.js`: vehicle specifications, model years, and source data.
 - `gallery.js` and `galleries-data.js`: image galleries and their data.
@@ -43,3 +44,7 @@ git push origin main
 ```
 
 Stage additional setup files explicitly if you want to include them. A push requires GitHub authentication for an account with write access. The preview task and this guide are local setup additions until you commit and push them.
+
+## Visual layer
+
+`atlas.css` is the current look. It loads after `style.css` and does not change vehicle data. Type is Instrument Sans and Instrument Serif. The Codex brief for the next pass lives in `codex/`.
