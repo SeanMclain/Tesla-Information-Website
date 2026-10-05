@@ -14,7 +14,10 @@ function renderResearch(){
   charging:'The checked connector count is the Q2 2026 operational table. Later support-page totals stay inherited until that page is rechecked.',
   designs:'Semi and both Roadsters include corpus milestones. Target specifications are not delivered-vehicle tests. Historical vehicle years in the archive are unchanged.'
  };
- $('researchTabs').innerHTML=Object.entries(RESEARCH_LABELS).map(([id,label])=>`<button type="button" data-topic="${id}" class="${id===researchTopic?'active':''}" aria-pressed="${id===researchTopic}">${label}</button>`).join('');
+ const topicButtons=Object.entries(RESEARCH_LABELS).map(([id,label])=>`<a href="#research-${id}" data-topic="${id}" class="${id===researchTopic?'active':''}" aria-current="${id===researchTopic?'true':'false'}">${label}</a>`).join('');
+$('researchIndex').innerHTML=topicButtons;
+$('researchTabs').innerHTML=Object.entries(RESEARCH_LABELS).map(([id,label])=>`<button type="button" data-topic="${id}" class="${id===researchTopic?'active':''}" aria-pressed="${id===researchTopic}">${label}</button>`).join('');
+$('research').dataset.topic=researchTopic;
  $('researchContent').innerHTML=`${notes[researchTopic]?`<p class="research-note">${notes[researchTopic]}</p>`:''}<div class="research-grid">${RESEARCH[researchTopic].map(p=>`<article class="research-card">${p.image?`<button class="research-photo" data-photo="${p.id}" aria-label="Expand ${galleryEscape(p.title)} photo"><img src="${p.image}" alt="${galleryEscape(p.title)}" loading="lazy" decoding="async"></button>`:''}<div class="research-body"><p class="research-date">${galleryEscape(p.date)}</p><h3>${galleryEscape(p.title)}</h3><p>${galleryEscape(p.summary)}</p>${claimMarkup(p.claims)}<a class="source" href="${p.source}" target="_blank" rel="noopener">${p.id.startsWith('optimus-gen')?'Watch / read the demonstration':'Research source'}</a>${p.image&&p.photoSource?`<a class="source" href="${p.photoSource}" target="_blank" rel="noopener">Photo credit</a>`:''}${p.model?`<button class="jump design-jump" data-vehicle="${p.model}">Explore vehicle photos</button>`:''}</div></article>`).join('')}</div>`;
  $('researchContent').querySelectorAll('.research-photo img').forEach(img=>{
   const photo=RESEARCH[researchTopic].find(x=>x.id===img.closest('[data-photo]')?.dataset.photo);
@@ -30,6 +33,8 @@ function renderResearch(){
   if(img.complete&&img.naturalWidth===0)img.dispatchEvent(new Event('error'));
  });
 }
-$('researchTabs').addEventListener('click',e=>{const b=e.target.closest('[data-topic]');if(b){researchTopic=b.dataset.topic;renderResearch();$('researchTabs').querySelector(`[data-topic="${researchTopic}"]`).focus();}});
+function chooseResearch(id,focusTabs){if(!RESEARCH_LABELS[id])return;researchTopic=id;renderResearch();const target=focusTabs?$('researchTabs').querySelector(`[data-topic="${researchTopic}"]`):$('researchIndex').querySelector(`[data-topic="${researchTopic}"]`);target?.focus();}
+$('researchTabs').addEventListener('click',e=>{const b=e.target.closest('[data-topic]');if(b)chooseResearch(b.dataset.topic,true);});
+$('researchIndex').addEventListener('click',e=>{const a=e.target.closest('[data-topic]');if(!a)return;e.preventDefault();chooseResearch(a.dataset.topic,false);$('researchContent').scrollIntoView({block:'start'});});
 $('researchContent').addEventListener('click',e=>{const b=e.target.closest('[data-vehicle]');if(b){selected=b.dataset.vehicle;year=2026;historyMode='push';render();$('explore').scrollIntoView();}const pic=e.target.closest('[data-photo]');if(pic){const p=RESEARCH[researchTopic].find(x=>x.id===pic.dataset.photo);openPhotoViewer([{src:p.image,title:p.title,era:p.photoCaption||p.date,source:p.photoSource||p.source}],0,pic);}});
 renderResearch();
