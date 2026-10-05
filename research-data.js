@@ -1,6 +1,37 @@
 const RESEARCH={
   "optimus": [
     {
+      "id": "musk-optimus-quote",
+      "title": "Elon Musk on Optimus",
+      "date": "We, Robot · October 10, 2024 · Warner Bros. studio, Los Angeles",
+      "quote": "What can it do? It'll be able to do anything you want. It can be a teacher, babysit your kids. It can walk your dog, mow your lawn, get the groceries, just be your friend, serve drinks. Whatever you can think of, it will do.",
+      "quoteAttribution": "Elon Musk, on stage at We, Robot, as quoted by TechCrunch",
+      "summary": "Said the same night Cybercab was unveiled. This is a company ambition, not a test of a shipped robot. TechCrunch reported that Optimus units walking the party were remotely operated by Tesla employees.",
+      "source": "https://techcrunch.com/2024/10/14/tesla-optimus-bots-were-controlled-by-humans-during-the-we-robot-event/",
+      "image": null,
+      "model": null,
+      "claims": [
+        {"name": "Stated scale price", "value": "Musk said Optimus could eventually be priced around $20,000 to $30,000", "as_of": "2024-10-10", "method": "Reuters account of the We, Robot stage remarks", "source_id": "reuters.werobot.2024", "tag": "company_claim", "inherited": false},
+        {"name": "Party demonstration", "value": "Optimus units at the event were remotely operated", "as_of": "2024-10-14", "method": "TechCrunch reporting on Tesla employees controlling the robots", "source_id": "techcrunch.optimus.teleop", "tag": "independent_reporting", "inherited": false}
+      ]
+    },
+    {
+      "id": "musk-cybercab-quote",
+      "title": "Elon Musk on Cybercab and autonomy",
+      "date": "We, Robot · October 10, 2024",
+      "quote": "The autonomous future is here. With autonomy, you get your time back.",
+      "quoteAttribution": "Elon Musk, after arriving on stage in a Cybercab, as quoted by Reuters",
+      "summary": "Reuters reported the line at the Cybercab unveiling. The same article says Musk gave production and price targets, and that he said he tends to be optimistic on time. Those targets are not a current retail MSRP or a published Robotaxi fare.",
+      "source": "https://www.reuters.com/technology/teslas-musk-unveil-robotaxis-amid-fanfare-skepticism-2024-10-10/",
+      "image": "assets/cybercab.webp",
+      "model": "cc",
+      "claims": [
+        {"name": "Cybercab production target", "value": "Musk said production would start in 2026, before 2027, and that he tends to be optimistic on timing", "as_of": "2024-10-10", "method": "Reuters account of the We, Robot remarks", "source_id": "reuters.werobot.2024", "tag": "company_claim", "inherited": false},
+        {"name": "Stated vehicle price target", "value": "Priced under $30,000", "as_of": "2024-10-10", "method": "Reuters; a target, not the archive’s retail MSRP", "source_id": "reuters.werobot.2024", "tag": "company_claim", "inherited": false},
+        {"name": "Stated operating cost", "value": "About 20 cents a mile over time", "as_of": "2024-10-10", "method": "Reuters; an operating-cost target, not a rider fare", "source_id": "reuters.werobot.2024", "tag": "company_claim", "inherited": false}
+      ]
+    },
+    {
       "id": "optimus-gen1",
       "title": "Optimus · Gen 1",
       "date": "Gen 1 · March–May 2023 demonstrations",
@@ -232,6 +263,20 @@ const RESEARCH={
     }
   ],
   "autonomy": [
+    {
+      "id": "musk-autonomy-quote",
+      "title": "Elon Musk on Robotaxi and Cybercab",
+      "date": "We, Robot · October 10, 2024",
+      "quote": "The autonomous future is here. With autonomy, you get your time back.",
+      "quoteAttribution": "Elon Musk, as quoted by Reuters",
+      "summary": "Spoken at the Cybercab unveiling, with Optimus on the same program. Reuters also reported his targets: Cybercab production in 2026, a price under $30,000, and an operating cost of about 20 cents a mile. None of those is the fare a rider pays today, and none is entered as a retail MSRP in this archive.",
+      "source": "https://www.reuters.com/technology/teslas-musk-unveil-robotaxis-amid-fanfare-skepticism-2024-10-10/",
+      "image": "assets/cybercab.webp",
+      "model": "cc",
+      "claims": [
+        {"name": "What the quote is not", "value": "Not a current Robotaxi fare and not a Cybercab MSRP", "as_of": "2024-10-10", "method": "Separated from the vehicle record; rider guides still do not list a purchase price", "source_id": "reuters.werobot.2024", "tag": "company_claim", "inherited": false}
+      ]
+    },
     {
       "id": "fsd-supervised",
       "title": "FSD (Supervised)",

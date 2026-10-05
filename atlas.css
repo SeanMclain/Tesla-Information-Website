@@ -314,6 +314,11 @@ details { border-radius: 16px; background: rgba(255, 255, 255, .02); }
 .model-timeline span{color:var(--white);white-space:nowrap}
 .fare-panel{margin:8px 0 20px;padding:18px 20px;border-radius:16px;border:1px solid var(--line);background:var(--panel)}
 .fare-panel .statnum{font-family:"Instrument Serif",Georgia,serif}
+.quote-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 22px}
+.musk-quote{margin:0 0 16px;padding:18px 20px;border-left:2px solid var(--red);background:var(--panel);border-radius:0 16px 16px 0}
+.musk-quote p{margin:0 0 10px;font-family:"Instrument Serif",Georgia,serif;font-size:clamp(22px,2.4vw,30px);line-height:1.25;color:var(--white)}
+.musk-quote footer{color:var(--muted);font-size:13px}
+@media(max-width:800px){.quote-pair{grid-template-columns:1fr}}
 .research-index{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
 .research-index a{min-height:44px;display:inline-flex;align-items:center;padding:0 14px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
 .research-index a.active,.research-index a[aria-current="true"]{background:var(--white);color:var(--ink);border-color:var(--white)}
