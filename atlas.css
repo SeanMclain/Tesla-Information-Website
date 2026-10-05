@@ -296,15 +296,28 @@ footer .brand { letter-spacing: .16em; }
 
 details { border-radius: 16px; background: rgba(255, 255, 255, .02); }
 
+.nav-toggle{display:none}
+.compare-actions{display:flex;gap:10px;margin:0 0 18px}
+.compare-actions button{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--white)}
+.basis-warning{margin-top:15px;padding:14px 16px;border-radius:12px;border:1px solid rgba(232,33,39,.45);background:rgba(232,33,39,.08);color:var(--white);font-size:14px}
+.comptable tr.delta td:first-child{color:var(--red)}
+.claim-badge,.claim-asof,.claim-status{display:inline-flex;align-items:center;min-height:28px;margin:8px 8px 0 0;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:12px;letter-spacing:.04em}
+.claim-badge{color:var(--white);border-color:rgba(232,33,39,.45)}
+
 @media (max-width: 800px) {
   h1 { font-size: 46px; max-width: none; }
   .intro { padding-top: 32px; }
   .feature { height: 420px; }
   .snapshot { display: none; }
-  header { height: auto; }
+  header{height:72px;min-height:0;flex-wrap:nowrap;align-items:center;padding-top:0;padding-bottom:0}
+  header .brand{order:1}
+  header .nav-toggle{order:2;display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-left:auto;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--white)}
+  header .edition{display:none;order:3;width:auto}
+  header nav{order:4;display:none;position:absolute;top:72px;left:0;right:0;z-index:6;flex-direction:column;align-items:stretch;width:auto;gap:4px;padding:10px 4vw 14px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+  header.menu-open nav{display:flex}
+  header nav a{min-height:44px;display:flex;align-items:center}
 }
 
 @media (max-width: 600px) {
-  nav a { padding: 8px 10px; }
   .edition { letter-spacing: .08em; }
 }
