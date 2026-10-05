@@ -303,6 +303,11 @@ details { border-radius: 16px; background: rgba(255, 255, 255, .02); }
 .comptable tr.delta td:first-child{color:var(--red)}
 .claim-badge,.claim-asof,.claim-status{display:inline-flex;align-items:center;min-height:28px;margin:8px 8px 0 0;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:12px;letter-spacing:.04em}
 .claim-badge{color:var(--white);border-color:rgba(232,33,39,.45)}
+.license-chip{position:absolute;z-index:2;left:12px;top:12px;max-width:calc(100% - 24px);padding:6px 10px;border-radius:999px;background:rgba(7,8,10,.82);border:1px solid var(--line);color:var(--white);font-size:12px;letter-spacing:.04em}
+.shared-toggle button{min-height:44px;padding:0 14px;border:0;background:transparent;color:var(--white);text-decoration:underline}
+.source-card{position:fixed;z-index:20;display:grid;gap:4px;max-width:260px;padding:12px 14px;border-radius:12px;background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);color:var(--white);font-size:13px}
+.source-card span{color:var(--muted);letter-spacing:.04em}
+.source-card[hidden]{display:none}
 
 @media (max-width: 800px) {
   h1 { font-size: 46px; max-width: none; }
