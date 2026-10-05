@@ -44,5 +44,3 @@ It is not affiliated with Tesla, Inc. Do not restyle it into a counterfeit tesla
 ## First prompt to paste into Codex
 
 > Read README.md, AGENTS.md, MASTER_PROJECT_BRIEF.md, and references/site_status.json in this pack. You are improving SeanMclain/Tesla-Information-Website (Tesla Atlas), not a camera lens. Keep every element id that app.js, gallery.js, and research.js already use. Do not invent prices or specs. Raise the visual system off the original Arial template: type, header, model tabs, year chips, hero, cards, and mobile. Preview at http://127.0.0.1:5500 before you call it done.
-
-The single operating brief is `MERGED_BRIEF.md`. It compares this pack with the ChatGPT pack from 2026-10-05 and keeps both. Use that file first.
