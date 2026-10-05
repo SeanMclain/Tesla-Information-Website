@@ -47,4 +47,4 @@ Stage additional setup files explicitly if you want to include them. A push requ
 
 ## Visual layer
 
-`atlas.css` is the current look. It loads after `style.css` and does not change vehicle data. Type is Instrument Sans and Instrument Serif. The Codex brief for the next pass lives in `codex/`.
+`atlas.css` is the current look. It loads after `style.css` and does not change vehicle data. Type is Instrument Sans and Instrument Serif.
