@@ -314,6 +314,10 @@ details { border-radius: 16px; background: rgba(255, 255, 255, .02); }
 .model-timeline span{color:var(--white);white-space:nowrap}
 .fare-panel{margin:8px 0 20px;padding:18px 20px;border-radius:16px;border:1px solid var(--line);background:var(--panel)}
 .fare-panel .statnum{font-family:"Instrument Serif",Georgia,serif}
+.fare-panel h3{margin:18px 0 8px;font-size:18px}
+.estimate-list{margin:0;padding-left:18px;color:var(--muted)}
+.estimate-list li{margin:0 0 10px}
+.fare-panel .tablewrap{margin-top:14px}
 .quote-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 22px}
 .musk-quote{margin:0 0 16px;padding:18px 20px;border-left:2px solid var(--red);background:var(--panel);border-radius:0 16px 16px 0}
 .musk-quote p{margin:0 0 10px;font-family:"Instrument Serif",Georgia,serif;font-size:clamp(22px,2.4vw,30px);line-height:1.25;color:var(--white)}
