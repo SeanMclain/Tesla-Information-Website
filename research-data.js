@@ -264,6 +264,40 @@ const RESEARCH={
   ],
   "autonomy": [
     {
+      "id": "fsd-explainer",
+      "title": "Full Self-Driving (Supervised)",
+      "date": "Customer feature · snapshot October 2, 2026",
+      "summary": "This is the feature Tesla sells to drivers. The Q2 2026 update says an attentive driver is required and that the system does not make the vehicle autonomous. NHTSA’s opening paper for PE25012 described the customer system as SAE Level 2. That is a different thing from Robotaxi, which is a ride service, and from Cybercab, which is the purpose-built vehicle. Tesla’s own tutorial says the feature can steer, change lanes, follow a navigation route, and park while you supervise. The same tutorial says it does not make the vehicle autonomous. The archive does not have a Tesla-published Cybertruck driving film. The Cybertruck clip farther down is an independent driver.",
+      "source": "https://www.youtube.com/watch?v=tJc-ZtO5b_E",
+      "video": "tJc-ZtO5b_E",
+      "videoTitle": "Tesla tutorial: Full Self-Driving (Supervised)",
+      "videoLabel": "Tesla Tutorials · YouTube · the player is not downloaded into this site",
+      "image": null,
+      "claims": [
+        {"name": "Who it is for", "value": "A person in the driver’s seat of a Tesla, not an unoccupied robotaxi", "as_of": "2026-07-22", "method": "Tesla Q2 2026 update footnote on FSD (Supervised)", "source_id": "tesla.autonomy.fsd-v14", "tag": "company_claim", "inherited": false},
+        {"name": "Automation classification", "value": "SAE Level 2", "as_of": "PE25012 opening, 2025-10-01", "method": "NHTSA description of Tesla FSD", "source_id": "tesla.autonomy.nhtsa-pe25012", "tag": "regulator_finding", "inherited": true},
+        {"name": "Software the archive has dated", "value": "v14.3 in April 2026; v14 lite reaching U.S. customers and, in July, South Korea", "as_of": "2026-07-22", "method": "Tesla quarterly disclosures already recorded on the next card", "source_id": "tesla.autonomy.fsd-v14", "tag": "company_claim", "inherited": false},
+        {"name": "Subscriptions", "value": "1.48 million active as of June 30, 2026; over 55% of new North America deliveries in Q2 included a subscription", "as_of": "2026-06-30 and Q2 2026", "method": "Tesla Q2 2026 operational summary", "source_id": "tesla.autonomy.fsd-adoption", "tag": "company_claim", "inherited": false},
+        {"name": "A stated prediction, not a schedule this archive confirms", "value": "Musk said in October 2024 that unsupervised FSD would start in Texas and California the next year, on Model 3 and Model Y", "as_of": "2024-10-10", "method": "Reuters report of the We, Robot remarks", "source_id": "reuters.werobot.2024", "tag": "company_claim", "inherited": false}
+      ]
+    },
+    {
+      "id": "fsd-cybertruck",
+      "title": "Cybertruck and FSD (Supervised)",
+      "date": "Independent drive · April 7, 2026",
+      "summary": "Chuck Cook’s first-impressions drive of FSD (Supervised) v14.3, software 2026.2.9.6, talks through a Cybertruck and a Model Y receiving that build at the same time. He is a driver recording his own cars, not Tesla publishing a test. He still supervises the drive. The clip is played from YouTube and is not stored in this archive. It does not show that Cybertruck, Model 3, Model Y, Model S, or Model X can drive with nobody watching.",
+      "source": "https://www.youtube.com/watch?v=9YtDNqqCG_g",
+      "video": "9YtDNqqCG_g",
+      "videoTitle": "Chuck Cook: FSD v14.3 first impressions, including Cybertruck",
+      "videoLabel": "Independent driver · Chuck Cook · April 7, 2026 · not a Tesla test",
+      "image": null,
+      "model": "ct",
+      "claims": [
+        {"name": "What the clip is", "value": "One driver’s v14.3 drive, published on his channel", "as_of": "2026-04-07", "method": "YouTube title, channel, and description", "source_id": "chuckcook.fsd143", "tag": "independent_reporting", "inherited": false},
+        {"name": "What it does not prove", "value": "Not unsupervised driving and not a result for every Tesla model", "as_of": "2026-04-07", "method": "The recording is supervised by the person who published it", "source_id": "chuckcook.fsd143", "tag": "independent_reporting", "inherited": false}
+      ]
+    },
+    {
       "id": "musk-autonomy-quote",
       "title": "Elon Musk on Robotaxi and Cybercab",
       "date": "We, Robot · October 10, 2024",
